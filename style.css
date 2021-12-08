@@ -1,0 +1,139 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    overflow: hidden;
+    letter-spacing: 0.125rem !important;
+}
+
+.container-geral{
+    position: relative;
+    filter:blur(1.25);
+    min-height: 100vh;
+    background: no-repeat center/cover url(./assets/cat-6468024_1920.jpg);
+    animation: background-animation 45s ease-in-out 0s infinite;
+}
+
+footer{
+    background-color: transparent;
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    transition: 0.5s;
+}
+
+label{
+    position: relative;
+}
+
+.label{
+    color:#fff;
+    font-size: 1.25em;
+    text-transform: capitalize;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    transition: 0.5s;
+}
+
+*::selection{
+    background: #ff8500;
+    color: #fff;
+}
+
+.sobe-label+span{
+    top:-14.5px;
+    background: #fff;
+    border-radius:5px;
+    color: #333;
+    padding: 0.25rem;
+    font-size: 0.85rem;
+    z-index: 2;
+    box-shadow: 0px 2.5px 10px rgba(50,50,50,0.25);  
+}
+
+input{
+    line-height: 3rem !important;
+    font-size: 1.5em !important;
+    background: linear-gradient(rgba(255,255,255,0.07),rgba(255,255,255,0.15));
+    border: none;
+    border-radius:5px;
+    color: #fff
+}
+
+button{
+    color: #fff !important;
+    text-transform: uppercase !important;
+    background: rgba(255,255,255,0.12) !important;
+    transition: 0.25s !important;
+    transform-style: preserve-3d;
+    font-size: 1.35rem !important;
+}
+
+button:hover{
+    background: rgba(255,255,255,0.9) !important;
+    color: #ff8500 !important;
+}
+
+.position-arrow-up{
+    left: 50%;
+    color: #fff !important;
+    background: rgba(255,255,255,0.12) !important;
+    transition: 0.25s !important;
+}
+
+img{
+    width: 25px;
+    height: 25px;
+}
+
+.cima-arrow{
+    transform: rotate(180deg) !important;
+}
+
+.cima-footer{
+    transform: translateY(0px);
+}
+
+    
+.zoom:hover{
+    transform: scale(1.15) !important;
+    transform-style: preserve-3d;
+}
+
+.btn-cadastro-btn:hover{
+    font-weight: bold;
+}
+
+.btn-cadastro-btn:hover.zoom{
+    transform: scale(1.001) !important;   
+}
+
+.shadow-cima{
+    box-shadow: 0 -0.5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+
+@keyframes background-animation {
+    0%{
+        background: no-repeat center/cover url(./assets/cat-6468024_1920.jpg);
+    }
+    27%{
+        background: no-repeat center/cover url(./assets/cat-6468024_1920.jpg);
+    }
+    33%{
+        background: no-repeat center/cover url(./assets/cat-6781934_1920.jpg);
+    }
+    60%{
+        background: no-repeat center/cover url(./assets/cat-6781934_1920.jpg);
+    }
+    66%{
+        background: no-repeat center/cover url(./assets/maine-coon-694730_1920.jpg);
+    }
+    95%{
+        background: no-repeat center/cover url(./assets/maine-coon-694730_1920.jpg);   
+    }
+}
+
